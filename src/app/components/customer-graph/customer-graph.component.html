@@ -1,0 +1,11 @@
+<div class="container mx-auto">
+    <h2 mat-dialog-title class="text-center text-xl font-bold text-gray-800">Total Transaction Amount Per Day</h2>
+    <mat-dialog-content class="text-center mx-auto flex content-center align-middle">
+        <app-transaction-chart class="w-min" [transactions]="data.transactions"></app-transaction-chart>
+    </mat-dialog-content>
+
+    <mat-dialog-actions class="block mx-auto">
+        <button mat-button mat-dialog-close
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors duration-300">Close</button>
+    </mat-dialog-actions>
+</div>
